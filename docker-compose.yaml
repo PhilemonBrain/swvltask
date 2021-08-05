@@ -1,14 +1,14 @@
 version: "3.0"
 services:
-    swvl:
-        build: .
-        command: [ "node", "server.js" ]
-        environment: 
-            REDIS_URI: local:redis:6379
-        ports: 
-            - "4001:4001"
-        depends_on: 
-            - redis
+    # swvl:
+    #     build: .
+    #     command: [ "node", "server.js" ]
+    #     environment: 
+    #         REDIS_URI: local:redis:6379
+    #     ports: 
+    #         - "4001:4001"
+    #     depends_on: 
+    #         - redis
     redis:
         image: redis:6.2-alpine
         command: ["redis-server", "--bind", "localhost", "--port", "6379"]

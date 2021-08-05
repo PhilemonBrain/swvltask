@@ -4,13 +4,13 @@ const redis = require("redis")
 const { app } = createServer();
 
 
-redis.createClient({
-    port      : 6379,
-    host      : 'redis'
-});
+// redis.createClient({
+//     port      : 6379,
+//     host      : 'redis'
+// });
 
 
 app.listen(4000, function () {
-  console.log('CORS-enabled web server listening on port 4000');
+  console.log('You are successfully running a Notification API');
 });
 
