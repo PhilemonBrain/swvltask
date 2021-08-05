@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@bull-board/express": "^3.4.0",
+    "body-parser": "^1.19.0",
+    "bull": "3.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.1",
+    "redis": "^3.1.2",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest --detectOpenHandles --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
+  },
+  "compilerOptions": {
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts"
+  ]
+}
